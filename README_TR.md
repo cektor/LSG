@@ -10,6 +10,8 @@
   <img src="lsgon.png" alt="lsg Logo" width="150" height="150">
 </p>
 
+## [English Guide](https://github.com/cektor/LSG/blob/main/README.md)
+
 # 🛡️ Linux SecureGuard
 
 Linux sistemler için geliştirilmiş profesyonel antivirüs çözümü. Gerçek zamanlı koruma, ağ güvenliği ve gelişmiş tehdit tespiti özellikleri ile Linux sunucularınızı ve masaüstü sistemlerinizi korur.
