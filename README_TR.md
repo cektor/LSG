@@ -49,7 +49,7 @@ Linux sistemler için geliştirilmiş profesyonel antivirüs çözümü. Gerçek
 
 ## 📋 Sistem Gereksinimleri
 
-- **İşletim Sistemi**: Linux (Ubuntu, Debian, CentOS, Fedora)
+- **İşletim Sistemi**: Linux (Debian Tabanlı)
 - **Python**: 3.8 veya üzeri
 - **RAM**: Minimum 512 MB
 - **Disk Alanı**: 100 MB boş alan
