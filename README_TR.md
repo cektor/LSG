@@ -1,3 +1,5 @@
+## [English Guide](https://github.com/cektor/LSG/blob/main/README.md)
+
 <a href="#">
     <img src="https://raw.githubusercontent.com/pedromxavier/flag-badges/main/badges/TR.svg" alt="made in TR">
 </a>
@@ -10,7 +12,7 @@
   <img src="lsgon.png" alt="lsg Logo" width="150" height="150">
 </p>
 
-## [English Guide](https://github.com/cektor/LSG/blob/main/README.md)
+
 
 # 🛡️ Linux SecureGuard
 
