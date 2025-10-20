@@ -1,6 +1,19 @@
+<a href="#">
+    <img src="https://raw.githubusercontent.com/pedromxavier/flag-badges/main/badges/TR.svg" alt="made in TR">
+</a>
+
+<div align="center">
+
+<h1 align="center"></h1>
+
+<p align="center">
+  <img src="lsgon.png" alt="lsg Logo" width="150" height="150">
+</p>
+
 # 🛡️ Linux SecureGuard
 
 Professional antivirus solution developed for Linux systems. Protects your Linux servers and desktop systems with real-time protection, network security and advanced threat detection features.
+
 
 ## ✨ Features
 
@@ -40,6 +53,15 @@ Professional antivirus solution developed for Linux systems. Protects your Linux
 - **Network**: Internet connection (for database updates)
 
 ## 🚀 Installation
+
+# To install directly on Linux
+
+
+Linux (based debian) Terminal: Linux (debian based distributions) To install directly from Terminal.
+```bash
+wget -O Setup_Linux64.deb https://github.com/cektor/LSG/releases/download/1.0.0/Setup_Linux64.deb && sudo apt install ./Setup_Linux64.deb && sudo apt-get install -f -y
+```
+
 
 ### Prerequisites
 ```bash
@@ -85,6 +107,25 @@ sudo cp *.png /usr/share/pixmaps/
 # Now you can run with 'lsg' command
 lsg
 ```
+
+
+## 📸 Screenshots
+
+<div align="center">
+
+
+![1](screenshots/1.png)
+
+![2](screenshots/2.png)
+
+![3](screenshots/3.png)
+
+![4](screenshots/4.png)
+
+
+</div>
+
+
 
 ## 🎯 Usage
 
