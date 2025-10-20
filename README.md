@@ -9,6 +9,7 @@
 <p align="center">
   <img src="lsgon.png" alt="lsg Logo" width="150" height="150">
 </p>
+
 ## [Türkçe Kılavuz](https://github.com/cektor/LSG/blob/main/README_TR.md)
 
 # 🛡️ Linux SecureGuard
