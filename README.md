@@ -50,7 +50,7 @@ Professional antivirus solution developed for Linux systems. Protects your Linux
 
 ## 📋 System Requirements
 
-- **Operating System**: Linux (Ubuntu, Debian, CentOS, Fedora)
+- **Operating System**: Linux (Debian-based)
 - **Python**: 3.8 or higher
 - **RAM**: Minimum 512 MB
 - **Disk Space**: 100 MB free space
