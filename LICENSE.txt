@@ -1,0 +1,36 @@
+ALG Software & Electronics – Software License
+
+Licensor: ALG Software & Electronics
+Copyright Holder: Fatih ÖNDER (CekToR)
+
+1. Purpose
+
+This license ensures that the source code of the software "LSG - Linux SecureGuard" can be viewed, used, and distributed freely. However, any modifications, derivative works, or commercial use of the software are strictly prohibited.
+
+2. Rights
+
+Users are permitted to:
+
+Use the software free of charge.
+
+Examine the software's source code.
+
+Distribute the software in its original form.
+
+3. Restrictions
+
+Users are not allowed to:
+
+Modify, adapt, or create derivative works of the software or its source code.
+
+Use the software for commercial purposes (including sale, rental, or providing services).
+
+Remove or alter the original license or copyright information.
+
+4. Warranty Disclaimer
+
+The software is provided “as is”. ALG Software & Electronics and Fatih ÖNDER (CekToR) shall not be liable for any damages resulting from the use of this software.
+
+5. Validity
+
+This license applies to every copy of the software. Users who do not comply with the terms of this license automatically lose their rights under it.

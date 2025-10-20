@@ -1,0 +1,585 @@
+/* Ana Uygulama Stilleri */
+QMainWindow {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #1a1a1a, stop: 1 #0f0f0f);
+    color: #ffffff;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+}
+
+QWidget {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Sidebar Stilleri - Gelişmiş */
+#sidebar {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #2a2a2a, stop: 0.5 #252525, stop: 1 #1e1e1e);
+    border-right: 3px solid qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                  stop: 0 #4a9d5f, stop: 1 #3d8350);
+    min-width: 260px;
+    max-width: 260px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#sidebarTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a9d5f;
+    padding: 15px;
+    background-color: transparent;
+    border-bottom: 1px solid #444444;
+}
+
+#sidebarIcon {
+    font-size: 32px;
+    color: #4a9d5f;
+    padding: 10px;
+}
+
+/* Menü Butonları - Gelişmiş Animasyonlu */
+QPushButton#menuButton {
+    text-align: left;
+    padding: 18px 25px;
+    border: none;
+    background-color: transparent;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+    border-radius: 0px 25px 25px 0px;
+    margin: 2px 8px 2px 0px;
+}
+
+QPushButton#menuButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 rgba(74, 157, 95, 0.3), stop: 1 transparent);
+    border-left: 4px solid #4a9d5f;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+QPushButton#menuButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 rgba(61, 131, 80, 0.5), stop: 1 transparent);
+}
+
+QPushButton#menuButton:checked {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #4a9d5f, stop: 0.7 rgba(74, 157, 95, 0.4), stop: 1 transparent);
+    border-left: 4px solid #5ab06f;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0px 2px 8px rgba(74, 157, 95, 0.3);
+}
+
+/* Güncelleme Butonu */
+QPushButton#updateButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+QPushButton#updateButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 1 #4a9d5f);
+}
+
+QPushButton#updateButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #3d8350, stop: 1 #2a5a3a);
+}
+
+/* İçerik Alanı */
+#contentArea {
+    background-color: #1e1e1e;
+    border: none;
+}
+
+/* Sayfa Başlıkları */
+QLabel#pageTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a9d5f;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #4a9d5f;
+}
+
+/* Durum Kartları - Premium Tasarım */
+QFrame#statusCard {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #2f2f2f, stop: 0.5 #2a2a2a, stop: 1 #252525);
+    border: 2px solid #4a9d5f;
+    border-radius: 16px;
+    padding: 25px;
+    margin: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+QFrame#statusCard:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #3a3a3a, stop: 0.5 #333333, stop: 1 #2f2f2f);
+    border: 2px solid #5ab06f;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 20px rgba(74, 157, 95, 0.2);
+}
+
+QLabel#cardTitle {
+    font-size: 14px;
+    color: #cccccc;
+    font-weight: 500;
+}
+
+QLabel#cardValue {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4a9d5f;
+    margin-top: 5px;
+}
+
+/* Aktif Durum Kartı */
+QFrame#statusCard[status="active"] {
+    border: 2px solid #4a9d5f;
+}
+
+QLabel#cardValue[status="active"] {
+    color: #4a9d5f;
+}
+
+/* Pasif Durum Kartı */
+QFrame#statusCard[status="inactive"] {
+    border: 2px solid #cc3333;
+}
+
+QLabel#cardValue[status="inactive"] {
+    color: #cc3333;
+}
+
+/* Uyarı Durum Kartı */
+QFrame#statusCard[status="warning"] {
+    border: 2px solid #ff8800;
+}
+
+QLabel#cardValue[status="warning"] {
+    color: #ff8800;
+}
+
+/* Tehdit Durum Kartı */
+QFrame#statusCard[status="threat"] {
+    border: 2px solid #ff4444;
+}
+
+QLabel#cardValue[status="threat"] {
+    color: #ff4444;
+}
+
+/* Grup Kutuları - Modern Tasarım */
+QGroupBox {
+    font-weight: 600;
+    border: 2px solid #3a3a3a;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #2a2a2a, stop: 1 #1e1e1e);
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 15px;
+    padding: 5px 12px;
+    color: #4a9d5f;
+    font-size: 15px;
+    font-weight: bold;
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #4a9d5f, stop: 1 #2a2a2a);
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Tablolar - Gelişmiş Tasarım */
+QTableWidget {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #2a2a2a, stop: 1 #1f1f1f);
+    alternate-background-color: #333333;
+    selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #4a9d5f, stop: 1 #3d8350);
+    gridline-color: #3a3a3a;
+    border: 2px solid #3a3a3a;
+    border-radius: 12px;
+    outline: none;
+    show-decoration-selected: 1;
+}
+
+QTableWidget::item {
+    padding: 12px 8px;
+    border: none;
+    border-bottom: 1px solid #3a3a3a;
+    min-height: 20px;
+}
+
+QTableWidget::item:selected {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+QTableWidget::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #3a3a3a, stop: 1 #2f2f2f);
+    border-radius: 4px;
+}
+
+QTableWidget::item:alternate {
+    background-color: #2f2f2f;
+}
+
+QHeaderView {
+    background-color: #2a2a2a;
+}
+
+QHeaderView::section {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+    color: #ffffff;
+    padding: 15px 10px;
+    border: none;
+    border-right: 1px solid #2a5a3a;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+QHeaderView::section:first {
+    border-top-left-radius: 8px;
+}
+
+QHeaderView::section:last {
+    border-top-right-radius: 8px;
+    border-right: none;
+}
+
+QHeaderView::section:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 1 #4a9d5f);
+}
+
+QHeaderView::section:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #3d8350, stop: 1 #2a5a3a);
+}
+
+/* Giriş Alanları - Modern Input */
+QLineEdit {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #2f2f2f, stop: 1 #2a2a2a);
+    border: 2px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    selection-background-color: #4a9d5f;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4a9d5f;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #353535, stop: 1 #2f2f2f);
+    box-shadow: 0px 0px 8px #4a9d5f;
+}
+
+QLineEdit:hover {
+    border-color: #5ab06f;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #333333, stop: 1 #2d2d2d);
+}
+
+/* İlerleme Çubuğu */
+QProgressBar {
+    border: 2px solid #444444;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #4a9d5f, stop: 1 #5ab06f);
+    border-radius: 6px;
+}
+
+/* Onay Kutuları */
+QCheckBox {
+    spacing: 10px;
+    color: #ffffff;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+QCheckBox::indicator:unchecked {
+    border: 2px solid #444444;
+    background-color: #2a2a2a;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #4a9d5f;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+}
+
+QCheckBox::indicator:hover {
+    border: 2px solid #5ab06f;
+}
+
+/* Radyo Butonları */
+QRadioButton {
+    spacing: 10px;
+    color: #ffffff;
+}
+
+QRadioButton::indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+QRadioButton::indicator:unchecked {
+    border: 2px solid #444444;
+    background-color: #2a2a2a;
+}
+
+QRadioButton::indicator:checked {
+    border: 2px solid #4a9d5f;
+    background: qradial-gradient(cx: 0.5, cy: 0.5, radius: 0.5,
+                fx: 0.5, fy: 0.5, stop: 0 #4a9d5f, stop: 0.7 #4a9d5f, stop: 1 #2a2a2a);
+}
+
+/* Açılır Menüler */
+QComboBox {
+    background-color: #2a2a2a;
+    border: 2px solid #444444;
+    border-radius: 6px;
+    padding: 8px;
+    color: #ffffff;
+    min-width: 120px;
+}
+
+QComboBox:hover {
+    border-color: #5ab06f;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #4a9d5f;
+    margin-right: 10px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2a2a2a;
+    border: 2px solid #4a9d5f;
+    selection-background-color: #4a9d5f;
+    color: #ffffff;
+}
+
+/* Kaydırma Çubukları - Modern Stil */
+QScrollBar:vertical {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #2a2a2a, stop: 1 #252525);
+    width: 14px;
+    border-radius: 7px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #4a9d5f, stop: 0.5 #459157, stop: 1 #3d8350);
+    border-radius: 7px;
+    min-height: 25px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #5ab06f, stop: 0.5 #52a166, stop: 1 #4a9d5f);
+}
+
+QScrollBar::handle:vertical:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0,
+                stop: 0 #3d8350, stop: 0.5 #367a4a, stop: 1 #2a5a3a);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar:horizontal {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #2a2a2a, stop: 1 #252525);
+    height: 14px;
+    border-radius: 7px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 0.5 #459157, stop: 1 #3d8350);
+    border-radius: 7px;
+    min-width: 25px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 0.5 #52a166, stop: 1 #4a9d5f);
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Durum Çubuğu */
+QStatusBar {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #2a2a2a, stop: 1 #1e1e1e);
+    border-top: 1px solid #444444;
+    color: #cccccc;
+}
+
+/* Genel Butonlar - Premium Stil */
+QPushButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 0.5 #459157, stop: 1 #3d8350);
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0px 3px 10px #4a9d5f;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 0.5 #52a166, stop: 1 #4a9d5f);
+    transform: translateY(-1px);
+    box-shadow: 0px 5px 15px #4a9d5f;
+}
+
+QPushButton:pressed {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #3d8350, stop: 0.5 #367a4a, stop: 1 #2a5a3a);
+    transform: translateY(1px);
+    box-shadow: 0px 2px 5px #4a9d5f;
+}
+
+QPushButton:disabled {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #666666, stop: 1 #555555);
+    color: #999999;
+    box-shadow: none;
+}
+
+/* Tehlikeli Butonlar */
+QPushButton#dangerButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #cc3333, stop: 1 #aa2222);
+}
+
+QPushButton#dangerButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #dd4444, stop: 1 #cc3333);
+}
+
+/* Uyarı Butonları */
+QPushButton#warningButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #ff8800, stop: 1 #dd7700);
+}
+
+QPushButton#warningButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #ff9922, stop: 1 #ff8800);
+}
+
+/* Bilgi Butonları */
+QPushButton#infoButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a6b9d, stop: 1 #3d5a8a);
+}
+
+QPushButton#infoButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5a7bad, stop: 1 #4a6b9d);
+}
+
+/* Başarı Butonları */
+QPushButton#successButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+}
+
+QPushButton#successButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 1 #4a9d5f);
+}
+
+/* Ekleme Butonları */
+QPushButton#addButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+}
+
+QPushButton#addButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 1 #4a9d5f);
+}
+
+/* Yenileme Butonları */
+QPushButton#refreshButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+}
+
+QPushButton#refreshButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 1 #4a9d5f);
+}
+
+/* Geri Yükleme Butonları */
+QPushButton#restoreButton {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #4a9d5f, stop: 1 #3d8350);
+}
+
+QPushButton#restoreButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                stop: 0 #5ab06f, stop: 1 #4a9d5f);
+}

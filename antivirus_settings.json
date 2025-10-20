@@ -1,0 +1,11 @@
+{
+    "real_time_protection": true,
+    "auto_update": true,
+    "minimize_to_tray": true,
+    "quarantine_auto": true,
+    "auto_scan": false,
+    "scan_archives": true,
+    "scan_email": true,
+    "heuristic_analysis": true,
+    "network_protection": true
+}
