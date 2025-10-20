@@ -1,3 +1,15 @@
+<a href="#">
+    <img src="https://raw.githubusercontent.com/pedromxavier/flag-badges/main/badges/TR.svg" alt="made in TR">
+</a>
+
+<div align="center">
+
+<h1 align="center"></h1>
+
+<p align="center">
+  <img src="lsgon.png" alt="lsg Logo" width="150" height="150">
+</p>
+
 # 🛡️ Linux SecureGuard
 
 Linux sistemler için geliştirilmiş profesyonel antivirüs çözümü. Gerçek zamanlı koruma, ağ güvenliği ve gelişmiş tehdit tespiti özellikleri ile Linux sunucularınızı ve masaüstü sistemlerinizi korur.
@@ -40,6 +52,14 @@ Linux sistemler için geliştirilmiş profesyonel antivirüs çözümü. Gerçek
 - **Ağ**: İnternet bağlantısı (veritabanı güncellemeleri için)
 
 ## 🚀 Kurulum
+
+# Linux'a doğrudan yüklemek için
+
+
+Linux (debian tabanlı) Terminal: Linux (debian tabanlı dağıtımlar) Terminal'den doğrudan yüklemek için.
+```bash
+wget -O Setup_Linux64.deb https://github.com/cektor/LSG/releases/download/1.0.0/Setup_Linux64.deb && sudo apt install ./Setup_Linux64.deb && sudo apt-get install -f -y
+```
 
 ### Gereksinimler
 ```bash
@@ -85,6 +105,29 @@ sudo cp *.png /usr/share/pixmaps/
 # Artık 'lsg' komutuyla çalıştırabilirsiniz
 lsg
 ```
+
+## 📸 Ekran görüntüleri
+
+<div align="center">
+
+
+![1](screenshots/1.png)
+
+![2](screenshots/2.png)
+
+![3](screenshots/3.png)
+
+![4](screenshots/4.png)
+
+![5](screenshots/5.png)
+
+![6](screenshots/6.png)
+
+![7](screenshots/7.png)
+
+
+</div>
+
 
 ## 🎯 Kullanım
 
